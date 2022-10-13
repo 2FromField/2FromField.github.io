@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Josefin+Sans:100&family=Rambla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');/* COLOR */
+/* Red = #9a0134 */
+/* Blue = #021d26 */
+/* Gris = #d9d9d9 */
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+  color: whitesmoke !important;
+  background-color: whitesmoke !important;
+  font-family: 'Rambla',sans-serif;
+}
+h2{
+  font-family: 'Audiowide', sans-serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-shadow: -3px -3px 3px rgb(132, 27, 62);
+}
+li{
+  list-style-type: none;
+}
+
+/************************ HEADER ****************************/
+.navbar{
+  background-color: #FAFAFA;
+  opacity: 0.9;
+  height: 42px;
+  transition: 0.7s;
+}
+.navbar-nav{
+  width: 80% !important;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+header{
+  text-align: center;
+  background: url(media/header.jpg) no-repeat fixed 50% 50%;
+  background-size: cover;
+}
+h1{
+  padding: 90px 0 10px 0;
+  font-family: 'Anton', sans-serif;
+  font-size: 4.3em;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 15px black;
+}
+.from{
+  color: #021d26;
+}
+.field{
+  color: #9a0134;
+}
+#line{
+  height: 1px;
+  background-color: rgb(132, 27, 62);
+  width: 25%;
+  margin: 0 auto;
+}
+h2{
+  padding: 20px 0 50px 0;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+.presentation{
+  background-color: rgb(255, 255, 255,0.1);
+  height: 240px;
+  margin-top: 20px;
+}
+.infos{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+}
+.photo{
+  position: relative;
+}
+.photo img{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 130px;
+  max-width: 90%;
+}
+.photo img:hover{
+  transform: scale(1.25);
+  transition: 0.6s;
+}
+header .button{
+  margin-top: 45px;
+}
+header .button a{
+  padding: 20px 80px;
+  border: 1px solid #b3aca7;
+  border-radius: 10px;
+  width: 300px;
+}
+header .button:hover a{
+  background: #9a0134;
+  color: #d9d9d9;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+
+
+
+/************************ SECTION 0 : Sofware ****************************/
+#software{
+  position: relative;
+  padding: 40px 40px 0px 50px;
+  margin: 150px 6% -150px 10%;
+  height: 350px;
+  max-width: 90%;
+  clip-path: polygon(30% 0, 70% 0, 100% 0, 100% 100%, 80% 67%, 20% 67%, 0 100%, 0 0);
+  background-size: cover;
+  background: linear-gradient(180deg, rgba(106, 106, 106, 0.705), #021d26);
+  border-radius: 20px 20px 100px 100px;
+}
+.software-icons{
+  margin: 0 auto;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 80%;
+}
+.software-icons img{
+  height: 80px;
+}
+
+
+
+
+/************************ SECTION 1 : LANGAGES ****************************/
+h3{
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-shadow: -3px -3px 3px #000000;
+}
+#langages{
+  position: relative;
+  padding: 100px 80px 80px 50px;
+  margin: 0 6% 0 10%;
+  height: 600px;
+  max-width: 90%;
+  clip-path: polygon(20% 10%, 80% 10%, 100% 30%, 100% 70%, 80% 90%, 20% 90%, 0 70%, 0 30%);
+  background-size: cover;
+  border-radius: 3000px;
+  background: linear-gradient(180deg, #9a0134, #2c000f);
+}
+#langages .bar{
+  letter-spacing: 0.1em;
+  padding: 10px 0 4px 0;
+  text-align: center;
+  font-size: 1.2em;
+}
+.progress{
+  width: 70%;
+  margin: auto;
+}
+
+
+
+
+/************************ SECTION 1 : FORMATION ****************************/
+#formation{
+  position: relative;
+  padding: 140px 40px 40px 50px;
+  margin: -160px 6% 0 10%;
+  height: 350px;
+  max-width: 90%;
+  clip-path: polygon(20% 35%, 80% 35%, 100% 0, 100% 100%, 80% 100%, 30% 100%, 0 100%, 0 0);
+  background-size: cover;
+  background: linear-gradient(180deg, #021d26, rgba(106, 106, 106, 0.705));
+  border-radius: 100px 100px 20px 20px;
+}
+#autodidacte{
+  padding-top: 20px;
+  float: left;
+  position: relative;
+}
+#occ{
+  float: right;
+  position: relative;
+  margin-top: -30px;
+  padding: 50px 0 0 0%;
+}
+#formation h4{
+  font-weight: blod;
+  letter-spacing: 0.08em;
+  padding-bottom: 10px;
+  color: whitesmoke;
+  text-shadow: -1px -1px 1px black;
+  text-align: center;
+}
+.counter{
+  display: flex;
+  text-align: center;
+}
+.data{
+  border: 1px solid black;
+  width: 170px;
+  margin: 0 10px;
+  box-shadow: 0 0 8px black;
+  padding: 5px 10px;
+}
+.counter-value{
+  font-size: 2em;
+}
+.data-span{
+  font-size: 1.8em;
+}
+
+
+
+/************************ SECTION 2 : PARCOURS ****************************/
+#parcours{
+  color: black;
+  max-width: 800px;
+  margin: 150px auto 180px auto;
+  padding: 40px 30px 100px 30px;
+  background: url(./media/stairs.jpg) no-repeat fixed 50% 50%;
+  background-size: cover;
+  border-radius: 8px;
+  box-shadow: -1px -1px 8px black;
+}
+#parcours h3{
+  color: #9a0134;
+  font-size: 2.5em;
+  padding-bottom: 30px;
+}
+#parcours h4{
+  text-align: center;
+  font-size: 1.6em;
+  color: #021d26;
+  margin-left: 20px;
+}
+#parcours h6{
+  text-align: center;
+  font-style: italic;
+  color: #9a0134;
+  margin-left: 20px;
+}
+#parcours .steps{
+  position: relative;
+  text-align: center;
+  border: #000 solid 1px;
+  padding: 20px 0 0px 0;
+  margin-top: 20px;
+  border-radius: 10px;
+  height: 120px;
+  overflow: hidden;
+  box-shadow: 3px 3px 3px black;
+  background-color: #021d26;
+  clip-path: polygon(96% 0, 93% 7%, 100% 7%, 100% 100%, 66% 100%, 28% 100%, 0 100%, 0 0);
+}
+#parcours .steps p{
+  text-align: center;
+  margin-top: 25px;
+  color: whitesmoke;
+}
+#parcours .steps .intro{
+  text-align: center;
+  margin-top: -80px;
+  color: #021d26;
+  line-height: 0.8em;
+  font-style: bold;
+}
+#parcours .steps:hover{
+  background-color: whitesmoke;
+  transition: 0.7s;
+}
+
+#parcours p{
+  line-height: 1.9em;
+}
+.timeline{
+  border-top: 3px solid #000;
+  border-image: linear-gradient(to right, #9a0134, #021d26);
+  border-image-slice: 1;
+  margin: 0;
+  padding: 40px;
+  position: relative;
+}
+.timeline:nth-child(1):after{
+  content:'▲';
+  color: #9a0134;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  box-sizing: content-box !important;
+}
+.timeline:nth-child(1){
+  border-bottom: 3px solid;
+  border-top: none;
+  width: 80%;
+}
+.timeline:nth-child(2){
+  border-top: none;
+}
+.timeline:nth-child(odd){
+  border-right: 3px solid;
+  padding-left: 0;
+}
+.timeline:nth-child(even){
+  border-left: 3px solid;
+  padding-right: 0;
+}
+
+
+
+
+/************************ FOOTER ****************************/
+footer{
+  text-align: center;
+  pad: 160px 50px 5 50px;
+}
+
+.footer-icons{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 80%;
+}
+.network{
+  font-size: 4em;
+  border: 1px solid black;
+  padding: 30px 45px;
+  color: grey;
+  z-index: -1 !important;
+  border-radius: 50%;
+}
+.network:hover{
+  background-color: grey;
+  transition: all 0.3s ease-in-out;
+  color: whitesmoke;
+}
+.arrow{
+  margin: -20 auto;
+  padding-top: 25px;
+  animation: arrow linear 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes arrow{
+  0%{
+    transform: translateY(0px);
+  }
+  38%{
+    transform: translateY(8px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+.arrow a{
+  font-size: 3em;
+  border: none;
+  color: #021d26;
+}
+.arrow:hover i{
+  transform: scale(1.6);
+  transition: 0.5s ease-in-out;
+  color: #9a0134;
+}
+footer p {
+  font-size: 0.9em;
+  letter-spacing: 0.3em;
+  color: black;
+}
