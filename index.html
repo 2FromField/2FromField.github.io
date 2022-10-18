@@ -22,7 +22,10 @@
                         <a href="#" class="nav-link active">Profil</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#formation" class="nav-link">Formation</a>
+                        <a href="#software" class="nav-link">Formation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#parcours" class="nav-link">Parcours</a>
                     </li>
                     <li class="nav-item">
                         <a href="#portfolio" class="nav-link">Portfolio</a>
@@ -239,8 +242,7 @@
                 <div>
                     <h4>Data-Scientist <br> Projet Interreg NOMADe x laboratoire PSMS</h4>
                     <h6>Fév.2022 - Déc.2022</h6>
-                    <div class="steps">
-                        <p>Scientist</p>
+                    <div id="window">
                         <div class="intro">
                             <li>
                                 <ul>Créateur & Coordinateur d'expérimentations</ul>
@@ -250,17 +252,26 @@
                             </li>
                         </div>
                     </div>
-                    #
                     <div class="steps">
-                        <p>Data-analyst</p>
-                        <div class="intro">
-                            <li>
-                                <ul>Nettoyage, Lissage et Filtrage de données</ul>
-                                <ul>Data-visualisation (graph, tableur, radar-chart...)</ul>
-                                <ul>Création de web-questionnaire / web-report</ul>
-                                <ul>Tests statistiques</ul>
-                            </li>
+                        <div id="slider"></div>
+                        <p>Scientist</p>
+                    </div>
+                    <!--  -->
+                    <div class="second-window">
+                        <div id="window">
+                            <div class="intro">
+                                <li>
+                                    <ul>Nettoyage, Lissage et Filtrage de données</ul>
+                                    <ul>Data-visualisation (graph, tableur, radar-chart...)</ul>
+                                    <ul>Création de web-questionnaire / web-report</ul>
+                                    <ul>Tests statistiques</ul>
+                                </li>
+                            </div>
                         </div>
+                    </div>
+                    <div class="steps">
+                        <div id="slider"></div>
+                        <p>Data-analyst</p>
                     </div>
                 </div>
             </div>
@@ -269,8 +280,7 @@
                 <div>
                     <h4> MASTER - UFR STAPS de Reims <br> Ingénierie et Ergonomie des APS</h4>
                     <h6>Sept. 2020 - Juin 2022</h6>
-                    <div class="steps">
-                        <p>Formation universitaire</p>
+                    <div id="window">
                         <div class="intro">
                             <li>
                                 <ul>Langage python / R / Matlab / A-frame / VBA </ul>
@@ -280,18 +290,27 @@
                             </li>
                         </div>
                     </div>
-                    #
                     <div class="steps">
-                        <p>Apprentissage Autodidacte</p>
-                        <div class="intro">
-                            <li>
-                                <br>
-                                <ul>Perfectionnement sur le langage python </ul>
-                                <br>
-                                <br>
-                                <ul>Apprentissage des langages JavaScript, HTML & CSS</ul>
-                            </li>
+                        <div id="slider"></div>
+                        <p>Formation universitaire</p>
+                    </div>
+                    <!--  -->
+                    <div class="second-window">
+                        <div id="window">
+                            <div class="intro">
+                                <li>
+                                    <br>
+                                    <ul>Perfectionnement sur le langage python </ul>
+                                    <br>
+                                    <br>
+                                    <ul>Apprentissage des langages JavaScript, HTML & CSS</ul>
+                                </li>
+                            </div>
                         </div>
+                    </div>
+                    <div class="steps">
+                        <div id="slider"></div>
+                        <p>Apprentissage Autodidacte</p>
                     </div>
                 </div>
             </div>
@@ -301,10 +320,10 @@
                 <div>
                     <h4>UFR STAPS - Licence</h4>
                     <h6>Sept. 2017 - Juin 2020</h6>
-                    <div class="steps">
-                        <p>Formation universitaire</p>
+                    <div id="window">
                         <div class="intro">
                             <li>
+                                <br>
                                 <ul>Science de la vie : Anatomie, Biomécanique, Physiologie</ul>
                                 <ul>Science humaine : Histoire, Sociologie, Psychologie</ul>
                                 <ul>Approche pratique & théorique des APS</ul>
@@ -312,7 +331,33 @@
                             </li>
                         </div>
                     </div>
+                    <div class="steps">
+                        <div id="slider"></div>
+                        <p>Formation universitaire</p>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="slider-container">
+            <div class="menu">
+            <label for="slide-dot-1"></label>
+            <label for="slide-dot-2"></label>
+            <label for="slide-dot-3"></label>
+            </div>
+            <input id="slide-dot-1" type="radio" name="slides" checked />
+            <div class="slide slide-1">
+                <div class="portfolio-description">Web Design</div>
+            </div>
+            <input id="slide-dot-2" type="radio" name="slides" />
+            <div class="slide slide-2">
+                <div class="portfolio-description">Py-script</div>
+            </div>
+            <input id="slide-dot-3" type="radio" name="slides" />
+            <div class="slide slide-3">
+                <div class="portfolio-description">MPLsoccer</div>
             </div>
         </div>
     </section>
