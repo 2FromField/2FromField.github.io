@@ -8,8 +8,8 @@ html{
   scroll-behavior: smooth;
 }
 body{
-  color: whitesmoke !important;
-  background-color: whitesmoke !important;
+  color: rgb(255, 255, 255) !important;
+  background: linear-gradient(rgb(49, 49, 49), rgb(216, 216, 216)) !important;
   font-family: 'Rambla',sans-serif;
 }
 h2{
@@ -93,8 +93,12 @@ h2{
 }
 header .button{
   margin-top: 45px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #9a0134;
 }
 header .button a{
+  color:#9a0134;
   padding: 20px 80px;
   border: 1px solid #b3aca7;
   border-radius: 10px;
@@ -324,7 +328,7 @@ display: none;
 }
 
 .timeline{
-  border-top: 3px solid #000;
+  border-top: 5px solid #000;
   border-image: linear-gradient(to right, #9a0134, #021d26);
   border-image-slice: 1;
   margin: 0;
@@ -340,7 +344,7 @@ display: none;
   box-sizing: content-box !important;
 }
 .timeline:nth-child(1){
-  border-bottom: 3px solid;
+  border-bottom: 5px solid;
   border-top: none;
   width: 80%;
 }
@@ -348,11 +352,11 @@ display: none;
   border-top: none;
 }
 .timeline:nth-child(odd){
-  border-right: 3px solid;
+  border-right: 5px solid;
   padding-left: 0;
 }
 .timeline:nth-child(even){
-  border-left: 3px solid;
+  border-left: 5px solid;
   padding-right: 0;
 }
 
@@ -390,7 +394,7 @@ display: none;
 }
 .menu label:hover,
 .menu label:focus {
-  background: #1c87c9;
+  background: #021d26;
 }
 .slide {
   width: 100%;
@@ -419,11 +423,31 @@ display: none;
 .slide-3 {
   background-image: url("./media/soccerField.jpg");
 }
+
+.button_portfolio a{
+  margin: auto 0;
+  color:#9a0134;
+  background-color: rgb(255, 255, 255,.5);
+  font-size: 8em;
+  font-family: 'Anton';
+  padding: 20px 80px;
+  border: 1px solid #b3aca7;
+  border-radius: 100px;
+  border: 1px solid black;
+  width: 300px;
+}
+.button_portfolio:hover a{
+  border-radius: 100px;
+  background: #9a0134;
+  color: #d9d9d9;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
 .slide-4 {
   background-image: url("./media/research.png");
 }
 .portfolio-description{
-  font-size: 10em;
+  font-size: 8em;
   margin: auto 0;
   color: #9a0134;
   font-family: 'Anton';
@@ -442,7 +466,7 @@ footer{
   background-size: cover;
 }
 
-.footer-icons{
+#footer-icons{
   padding-top: 30px;
   margin: 0 auto;
   display: flex;
@@ -453,7 +477,7 @@ footer{
   font-size: 4em;
   border: 1px solid black;
   padding: 30px 45px;
-  color: grey;
+  color: #9a0134;
   z-index: -1 !important;
   border-radius: 50%;
 }
