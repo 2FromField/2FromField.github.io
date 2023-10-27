@@ -34,6 +34,10 @@ li{
   margin: 0 auto;
   justify-content: space-between;
 }
+.navbar .col-menu{
+  position: absolute;
+  right: 2%;
+}
 header{
   text-align: center;
   background: url(media/header.jpg) no-repeat fixed 50% 50%;
@@ -152,7 +156,7 @@ h3{
   position: relative;
   padding: 100px 80px 80px 50px;
   margin: 0 6% 0 10%;
-  height: 600px;
+  height: 670px;
   max-width: 90%;
   clip-path: polygon(20% 10%, 80% 10%, 100% 30%, 100% 70%, 80% 90%, 20% 90%, 0 70%, 0 30%);
   background-size: cover;
@@ -173,24 +177,24 @@ h3{
 
 
 
-/************************ SECTION 1 : FORMATION ****************************/
+/******************* SECTION 1 : FORMATION & COMPETENCES ************************/
 #formation{
   position: relative;
   padding: 140px 40px 40px 50px;
   margin: -160px 6% 0 10%;
-  height: 350px;
+  height: 500px;
   max-width: 90%;
-  clip-path: polygon(20% 35%, 80% 35%, 100% 0, 100% 100%, 80% 100%, 30% 100%, 0 100%, 0 0);
+  clip-path: polygon(20% 25%, 80% 25%, 100% 0, 100% 100%, 80% 100%, 30% 100%, 0 100%, 0 0);
   background-size: cover;
   background: linear-gradient(180deg, #021d26, rgba(106, 106, 106, 0.705));
   border-radius: 100px 100px 20px 20px;
 }
-#autodidacte{
+#left_formation{
   padding-top: 20px;
   float: left;
   position: relative;
 }
-#occ{
+#right_formation{
   float: right;
   position: relative;
   margin-top: -30px;
@@ -532,8 +536,10 @@ footer p {
 @media screen and (max-width: 1020px) {
   /* FORMATION */
   #formation{
-    padding: 240px 40px 40px 50px;
-    height:600px;
+    padding: 170px 40px 40px 50px;
+    height:550px;
+    clip-path: polygon(20% 22%, 80% 22%, 100% 0, 100% 100%, 80% 100%, 30% 100%, 0 100%, 0 0);
+
   }
   #occ{
     margin-top: 120px;
@@ -561,6 +567,10 @@ footer p {
 }
 
 @media screen and (max-width: 900px) {
+  /* HEADER */
+  .navbar-bar{
+    display: none;
+  }
   /* SOFTWARE */
   .software-icons img{
     height: 50px;
