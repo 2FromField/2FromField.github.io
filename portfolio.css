@@ -44,6 +44,7 @@ header{
   text-align: center;
   background: url(media/ground.jpg) no-repeat fixed 50% 50%;
   background-size: cover;
+  margin-bottom: 100px;
 }
 h1{
   padding: 90px 0 10px 0;
@@ -132,6 +133,70 @@ header .button:hover a{
   margin-left: 36%;
 }
 
+h3{
+  text-align: center;
+  font-size: 2.5em;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #9a0134;
+  text-shadow: -3px -3px 3px #000000;
+}
+
+/************************ SECTION 0 : EXPERIENCES *************************/
+#experiences h3{
+  text-align: center;
+  font-size: 2.5em;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #9a0134;
+  text-shadow: -3px -3px 3px #000000;
+}
+h4{
+  font-weight: bold;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.experience-container{
+  position: relative;
+  padding: 20px;
+  margin: 50px 6% 50px 10%;
+  /* height: 350px; */
+  max-width: 95%;
+  /* clip-path: polygon(30% 0, 70% 0, 100% 0, 100% 100%, 80% 67%, 20% 67%, 0 100%, 0 0); */
+  background-size: cover;
+  background: linear-gradient(180deg, rgba(106, 106, 106, 0.705), #021d26);
+  border-radius: 20px 20px 20px 20px;
+}
+.parcours h3{
+  color: #9a0134;
+  font-size: 2.5em;
+  padding-bottom: 30px;
+}
+#experience{
+  margin-top: 300px;
+}
+.img_enterprise{
+  height: 30px;
+  margin-top: -20px;
+}
+.job-container {
+    display: flex;
+    align-items: center; /* centre verticalement l'image et le texte */
+    gap: 10px; /* espace entre l'image et le texte */
+}
+.description{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.two-columns {
+  display: flex;
+  gap: 50px; /* espace entre les colonnes */
+}
+.two-columns ul {
+  list-style-type: disc;
+  padding-left: 50px;
+}
 
 /************************ SECTION 0 : SOFTWARE ****************************/
 #software{
@@ -155,42 +220,6 @@ header .button:hover a{
 .software-icons img{
   height: 80px;
 }
-
-
-
-
-/************************ SECTION 1 : LANGAGES ****************************/
-h3{
-  text-align: center;
-  font-family: 'Anton', sans-serif;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  text-shadow: -3px -3px 3px #000000;
-}
-#langages{
-  position: relative;
-  padding: 100px 80px 80px 50px;
-  margin: 0 6% 0 10%;
-  height: 670px;
-  max-width: 90%;
-  clip-path: polygon(20% 10%, 80% 10%, 100% 30%, 100% 70%, 80% 90%, 20% 90%, 0 70%, 0 30%);
-  background-size: cover;
-  border-radius: 3000px;
-  background: linear-gradient(180deg, #2c000f,#9a0134, #2c000f);
-}
-#langages .bar{
-  letter-spacing: 0.1em;
-  padding: 10px 0 4px 0;
-  text-align: center;
-  font-size: 1.2em;
-}
-.progress{
-  width: 70%;
-  margin: auto;
-}
-
-
-
 
 /******************* SECTION 1 : FORMATION & COMPETENCES ************************/
 #formation{
@@ -223,7 +252,7 @@ margin-top: 30px;
 /************************ SECTION 2 : PARCOURS ****************************/
 #parcours{
   color: black;
-  max-width: 800px;
+  max-width: 80%;
   margin: 150px auto 180px auto;
   padding: 40px 30px 100px 30px;
   background: url(./media/couloir.jpg) no-repeat fixed 50% 50%;
@@ -240,8 +269,9 @@ margin-top: 30px;
   text-align: center;
   font-weight: bold;
   font-size: 1.6em;
-  color: #021d26;
+  color: white;
   margin-left: 20px;
+  margin-top: 40px;
 }
 #parcours h6{
   font-weight: bold;
@@ -257,7 +287,7 @@ margin-top: 30px;
   padding: 20px 0 0px 0;
   margin-top: 20px;
   border-radius: 10px 10px 10px 10px;
-  height: 120px;
+  height: 200px;
   overflow: hidden;
   box-shadow: 4px 0px 4px black;
   background-color: #021d26;
@@ -292,8 +322,7 @@ display: none;
 }
 #window{
   position: absolute;
-  margin-top: 12px;
-  height: 120px;
+  height: 200px;
   width: 88%;
   border-radius: 10px;
   background-color: whitesmoke;
@@ -311,7 +340,7 @@ display: none;
   position: relative;
   clip-path: polygon(60% 0, 0 50%, 60% 100%, 100% 100%, 100% 0);
   z-index: 1;
-  height: 80px;
+  height: 160px;
   width: 15px;
   background-color: whitesmoke;
   float: right;
@@ -326,7 +355,7 @@ display: none;
 
 .timeline{
   border-top: 10px solid #000;
-  border-image: linear-gradient(to right, #9a0134, #021d26);
+  border-image: linear-gradient(to right, #99ff00, #00ccff);
   border-image-slice: 1;
   margin: 0;
   padding: 40px;
@@ -342,7 +371,7 @@ display: none;
 .timeline:nth-child(1){
   border-bottom: 10px solid;
   border-top: none;
-  width: 80%;
+  width: 100%;
 }
 .timeline:nth-child(2){
   border-top: none;
@@ -355,6 +384,49 @@ display: none;
   border-left: 10px solid;
   padding-right: 0;
 }
+
+/************************ SECTION 3 : MOSAIQUE ****************************/
+.honeycomb {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0px;
+  max-width: 1000px;
+  position: relative;
+}
+
+.hex {
+  width: 200px;
+  height: 138.56px; /* hauteur d’un hexagone régulier (≈ 1.1547 * largeur) */
+  clip-path: polygon(
+    50% 0%,
+    93% 25%,
+    93% 75%,
+    50% 100%,
+    7% 75%,
+    7% 25%
+  );
+  overflow: hidden;
+  position: relative;
+  background: #f0f0f0;
+  transition: transform 0.3s;
+}
+
+.hex img {
+  margin-left: 15%;
+  object-fit: cover;
+  display: block;
+}
+
+.hex:hover {
+  transform: scale(1.05);
+}
+
+/* Décale les lignes paires (offset) */
+.offset {
+  margin-left: 10px;
+}
+
 
 
 /************************ SECTION 3 : PORTFOLIO ****************************/
