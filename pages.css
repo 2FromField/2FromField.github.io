@@ -218,6 +218,8 @@ h3{
 /**************************************************************************/
 h4{
   font-weight: bold;
+  margin: 0;
+  line-height: 1.2;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .experience-container{
@@ -247,10 +249,14 @@ h4{
 .img_enterprise{
   height: 30px;
   margin-top: -20px;
+  object-fit: contain;
+  flex: 0 0 auto;
 }
 .job-container {
-    display: flex;
-    align-items: center; /* centre verticalement l'image et le texte */
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 .description{
   padding-top: 20px;
@@ -264,6 +270,28 @@ h4{
   list-style-type: disc;
   margin: 0;
   flex: 1;
+  min-width: 0;
+}
+
+@media (max-width: 580px){
+  .experience-container{
+    padding: 14px;
+  }
+
+  .job-container{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .img_enterprise{
+    width: 48px;
+    height: 48px;
+  }
+
+  .two-columns{
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 
@@ -274,7 +302,6 @@ h4{
   text-align: center;
   justify-content: center;
   margin: 20px;
-  background-color: rgba(255, 255, 255, 0.956);
 }
 
 .open-to-work{
@@ -556,9 +583,13 @@ h4{
   transition: transform 0.3s;
 }
 
-.hex img {
-  margin-left: 15%;
-  object-fit: cover;
+.hex img{
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
   display: block;
 }
 
