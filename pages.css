@@ -273,6 +273,8 @@ h4{
 #presentation{
   text-align: center;
   justify-content: center;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.956);
 }
 
 .open-to-work{
@@ -654,6 +656,143 @@ footer p {
   .project-media img{
     width: 30%;
     margin: auto;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  /* FORMATION */
+  #formation{
+    padding: 170px 40px 40px 50px;
+    height:550px;
+    clip-path: polygon(20% 22%, 80% 22%, 100% 0, 100% 100%, 80% 100%, 30% 100%, 0 100%, 0 0);
+
+  }
+  #occ{
+    margin-top: 120px;
+  }
+  #autodidacte{
+    position: absolute;
+  }
+
+  /* PORTFOLIO */
+  .button_portfolio a{
+    font-size: 6em;
+  }
+  .portfolio-description{
+    font-size: 6em;
+  }
+
+  /* FOOTER */
+  .network{
+    font-size: 3em;
+    padding: 20px 35px;
+  }
+  .arrow{
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /* HEADER */
+  .navbar-bar{
+    display: none;
+  }
+  /* SOFTWARE */
+  .software-icons img{
+    height: 50px;
+  }
+
+  /* PORTFOLIO */
+  .button_portfolio a{
+    font-size: 3.5em;
+  }
+  .portfolio-description{
+    font-size: 3.5em;
+  }
+  
+  /* FOOTER */
+  .network{
+    font-size: 2em;
+    padding: 10px 20px;
+  }
+  .arrow{
+    margin-top: 40px;
+  }
+}
+
+/* IPHONE 8 FORMAT */
+@media screen and (max-width: 420px) {
+  /* HEADER */
+  h1{
+    font-size: 3.5em;
+  }
+  h2{
+    font-size: 2em;
+  }
+  h5 span{
+    font-size: .7em;
+  }
+
+  /* SOFTWARE */
+  .software-icons img{
+    margin-left: -15px;
+    height: 25px;
+  }
+  #langages{
+    height: 650px;
+  }
+
+  /* PARCOURS */
+  #window{
+    width: 78%;
+  }
+  .intro ul{
+    margin-left: -25px;
+    margin-top: -5px;
+    font-size: .1em;
+  }
+  #parcours .timeline h4, .data .counter-value{
+    font-size: 1em;
+  }
+  #parcours .timeline h6{
+    font-size: .8em;
+  }
+
+  /* FORMATION */
+  #autodidacte, #occ{
+    position: absolute;
+    margin-left: -55px;
+  }
+  #formation h4{
+    font-size: 1em;
+  }
+  .data span{
+    font-size: .8em;
+  }
+  .data{
+    width: 120px;
+  }
+
+
+  /* PORTFOLIO */
+  .button_portfolio{
+    margin-top: 120px;
+  }
+  .button_portfolio a{
+    font-size: 1em;
+  }
+  .portfolio-description{
+    font-size: 3.5em;
+  }
+
+  /* FOOTER */
+  .network{
+    font-size: 1.5em;
+    padding: 8px 13px;
+  }
+  .arrow{
+    margin-top: 20px;
+    left: 45%;
   }
 }
 
