@@ -299,7 +299,7 @@ h4{
 .open-to-work{
   text-align: fixed;           /* reste visible (sinon mets absolute dans un parent) */
   top: 120px;
-  width: 80%;
+  width: 70%;
   margin: auto;
   margin-bottom: 150px;
 
