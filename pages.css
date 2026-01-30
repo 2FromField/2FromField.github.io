@@ -438,26 +438,6 @@ h4{
   border: 1px solid #d9d9d9;
 }
 
-/* Responsive */
-@media (max-width: 720px){
-  .profile-card__top{
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .profile-card__avatar{
-    margin: 0 auto;
-  }
-
-  .profile-card__facts{
-    justify-items: center;
-  }
-
-  .two-columns{
-    display: none;
-  }
-}
-
 
 
 /**************************************************************************/
@@ -674,6 +654,31 @@ footer p {
 /**************************************************************************/
 /*                              RESPONSIVITY                              */
 /**************************************************************************/
+/* Responsive */
+@media (max-width: 720px){
+  .profile-card__top{
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .profile-card__avatar{
+    margin: 0 auto;
+  }
+
+  .profile-card__facts{
+    justify-items: center;
+  }
+
+  .two-columns{
+    display: none;
+  }
+
+  .hex{
+    height: 100px;
+    width: 100px;
+  }
+}
+
 @media (max-width: 700px){
   .project-card{
     margin: 24px;
