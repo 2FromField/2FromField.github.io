@@ -225,10 +225,6 @@ h4{
 .experience-container{
   position: relative;
   padding: 20px;
-  margin: 0px 6% 20px 10%;
-  /* height: 350px; */
-  max-width: 95%;
-  /* clip-path: polygon(30% 0, 70% 0, 100% 0, 100% 100%, 80% 67%, 20% 67%, 0 100%, 0 0); */
   background-size: cover;
   background: linear-gradient(180deg, rgba(106, 106, 106, 0.705), #021d26);
   border-radius: 10px 10px 10px 10px;
@@ -237,10 +233,6 @@ h4{
 .study-container{
   position: relative;
   padding: 20px;
-  margin: 0px 6% 20px 10%;
-  /* height: 350px; */
-  max-width: 95%;
-  /* clip-path: polygon(30% 0, 70% 0, 100% 0, 100% 100%, 80% 67%, 20% 67%, 0 100%, 0 0); */
   background-size: cover;
   background: linear-gradient(180deg, rgba(106, 106, 106, 0.705), #02260f);
   border-radius: 10px 10px 10px 10px;
